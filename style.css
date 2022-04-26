@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --primary-cor:rgb(71, 71, 71);
+  --text-color: #ffffff;
+  --dark-mode1:rgb(71, 71, 71) ;
+  --dark-mode2: rgb(38, 38, 38);
+}
+html {
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  flex-direction: column;
+  min-height: 100%;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.center { /* Class feita pra alinhar as divs ao meio*/
+  display: flex;
+  justify-content: center;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+header button {
+  background-color: var(--primary-cor) !important;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0px;
+  color: var(--primary-cor);
+}
+#text {
+  max-width: 350px;
+}
+#button-addon2 {
+  width: 50px;
+  background-color: var(--primary-cor);
+  color: var(--text-color);
+}
+
+.lista {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  max-height: 350px;
+  overflow: auto;
+}
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin-top: 5px;
+}
+
+@media (max-width: 500px){
+  h1 {
+    font-size: 35px;
+  }
+  .tarefa {
+    max-width: 320px;
+    font-size: 14px;
+  }
+  #text {
+    max-width: 280px;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.span {
+  display: flex;
+  gap: 5px;
+}
+.span button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  border-radius: 4px;
+  font-size: 17px;
+  transition: .3s;
+}
+.checked {
+  background-color: rgb(151, 240, 151);
+}
+.checked:hover {
+  background-color: rgb(75, 189, 75)
+}
+.delet {
+  background-color: rgb(235, 100, 100);
+}
+.delet:hover {
+  background-color: rgb(255, 0, 0);
+}
+.concluido {
+  background-color: rgb(61, 61, 61);
+  color: white;
+  text-decoration: line-through;
+}
+
+footer {
+  background-color: var(--primary-cor);
+  color: var(--text-color);
+  padding: 30px;
+  text-align: center;
+  margin-top: auto;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.dark-mode1 {
+  background-color: var(--dark-mode1) !important;
+}
+.dark-mode2 {
+  background-color: var(--dark-mode2) !important;
+}
+.dark-mode3 {
+  color: var(--text-color) !important;
+}
